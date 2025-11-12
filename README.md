@@ -79,13 +79,13 @@ Before generating SBOMs, collect information about the current Ubuntu system in 
 1. Use Syft to create a system-level SBOM of APT-managed packages:
 
 ```bash
-syft packages dir:/ -o spdx-json > deliverables/system_sbom_before.json
+syft scan dir:/ -o spdx-json > deliverables/system_sbom_before.json
 ```
 **Syntax Breakdown**:
 
 **syft** → run Syft
 
-**packages** → “packages” subcommand
+**scan** → “scan” subcommand; used to scan the Codespace’s Ubuntu filesystem for installed packages
 
 **dir:/** → scan the root filesystem (/) for installed packages
 
@@ -139,7 +139,7 @@ grype sbom:../deliverables/system_sbom_before.json -o table > deliverables/syste
 2. Regenerate the SBOM after updates:
 
    ```bash
-   syft packages:apt -o spdx-json > deliverables/system_sbom_after.json
+   syft scan dir:/ -o spdx-json > deliverables/system_sbom_after.json
    ```
 
 3. Re-scan for vulnerabilities:
