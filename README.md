@@ -104,7 +104,7 @@ grype sbom:deliverables/system_sbom_before.json -o table > deliverables/system_v
 | **Syntax Breakdown** | **Description**
 |---------------|------------------------|
 | **grype** | Program used to scan something for vulnerabilities
-| **sbom:deliverables/system_sbom_before.json** | Program sub-command (*sbom*) used to tell Grype what to scan; in this case, the SBOM file generated in the previous step
+| **sbom:deliverables/system_sbom_before.json** | Program sub-command (*sbom*) telling Grype what to scan; in this case, the SBOM file generated in the previous step
 | **-o table** | Output (*-o*) the results as a human-readable *table*
 | **> deliverables/system_vulns_before.txt**| Standard shell redirection (*>*) that takes the previous command and saves it in a file names *system_vulns_before.txt* in the `deliverables` folder
 
