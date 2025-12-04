@@ -25,7 +25,7 @@ Assurance depends on having verifiable evidence that a system is in a trusted. G
 
 ### What risks persist when organizations delay system updates?
 Delaying updates leaves systems running software with known vulnerabilities that attackers can easily search for and exploit. Once a vulnerability becomes public, attackers quickly learn how to take advantage of it, making unpatched systems especially vulnerable.
-The longer updates are postponed, the greater the chance of breaches, service outages, or expensive emergency fixes.
+The longer updates are postponed, the greater the chance of the vulnerability being exploited, leading to potential data breaches, service disruptions, and loss of trust.
 
 ### How does this exercise embody the secure design lifecycle principle?
 This exercise demonstrates that security is not a one-time configuration step but an ongoing process of measurement, improvement, and verification. By generating SBOMs, scanning for vulnerabilities, applying patches, and validating changes, the workflow mirrors how secure systems evolve across their lifecycle.
